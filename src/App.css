@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+:root {
+    --colorMain1: #A6E1FA;
+    --colorMain2: #0E6BA8;
+    --colorMain3: #0A2472;
+    --colorMain4: #001C55;
+    --colorMain5: #00072D;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: var(--colorMain1);
+    font-size: 62.5%;
+    color: var(--colorMain1);
+    font-family: 'Red Rose', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* card */
+
+.card-container {
+    margin: 2rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+    color: white !important;
+    margin: 0 2rem !important;
+    background-color: var(--colorMain3) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 600) {
+    .card {
+        margin-bottom: 2rem 0 !important;
+    }
+}
+
+.infected {
+    border-bottom: 1rem solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    border-bottom: 1rem solid rgba(0, 255, 0, 0.5);
+}
+
+.death {
+    border-bottom: 1rem solid rgba(255, 0, 0, 0.5);
+}
+
+/* country picker */
+.form-control {
+    width: 30%;
+    margin-bottom: 3rem !important;
+    border-radius: 5px;
+}
+
+/* typist */
+
+
+.typist {
+    color: var(--colorMain5);
+    font-size: 5rem;
+}
+
+.aldrich {
+    color: var(--colorMain3);
+    font-size: 2rem;
+    margin: 0 auto;
 }
